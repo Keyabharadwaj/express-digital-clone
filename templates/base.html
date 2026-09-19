@@ -1,95 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>{% block title %}Express.Digital | Fully Managed Digital Marketing Platform{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
-</head>
-<body>
+<!doctype html>
+<lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>
+      {% block title %}Express.Digital | Fully Managed Digital Marketing
+      Platform{% endblock %}
+    </title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive.css') }}"
+    />
+  </head>
 
+  
+  
+  <>
     <!-- Header Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">Express<span>.Digital</span></a>
-            <nav class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about">About Us</a>
-                <a href="/services">Services</a>
-                <a href="/work">Case Studies</a>
-                <a href="/contact">Contact</a>
-            </nav>
-            <a href="/contact" class="nav-button">Request Free Quote</a>
-        </div>
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="/" class="brand-logo">Express<span>.Digital</span></a>
+
+        <!-- Mobile Hamburger Button -->
+        <button
+          class="mobile-toggle"
+          id="mobile-toggle"
+          aria-label="Toggle Navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <nav class="nav-menu" id="nav-menu">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/about" class="nav-link">About</a>
+          <a href="/services" class="nav-link">Services</a>
+          <a href="/work" class="nav-link">Work</a>
+          <a href="/contact" class="btn btn-primary">Contact Us</a>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content Area -->
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+    <main>{% block content %}{% endblock %}</main>
 
     <!-- Global Footer Section -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                
-                <!-- Brand Info Column -->
-                <div class="footer-col brand-col">
-                    <a href="/" class="footer-logo">Express<span>.Digital</span></a>
-                    <p class="footer-desc">
-                        A fully managed digital marketing platform powered by expert-vetted digital strategists. Transparent, performance-driven growth without traditional agency retainers.
-                    </p>
-                    <p class="footer-contact"><strong>Direct Contact:</strong> care@express.digital</p>
-                </div>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Brand Info Column -->
+          <div class="footer-col brand-col">
+            <a href="/" class="footer-logo">Express<span>.Digital</span></a>
+            <p class="footer-desc">
+              A fully managed digital marketing platform powered by
+              expert-vetted digital strategists. Transparent, performance-driven
+              growth without traditional agency retainers.
+            </p>
+            <p class="footer-contact">
+              <strong>Direct Contact:</strong> care@express.digital
+            </p>
+          </div>
 
-                <!-- Quick Links Column -->
-                <div class="footer-col">
-                    <h4>Platform</h4>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Platform</a></li>
-                        <li><a href="/work">Case Studies</a></li>
-                        <li><a href="/services">Our Process</a></li>
-                        <li><a href="/contact">Get Free Quote</a></li>
-                    </ul>
-                </div>
+          <!-- Quick Links Column -->
+          <div class="footer-col">
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Platform</a></li>
+              <li><a href="/work">Case Studies</a></li>
+              <li><a href="/services">Our Process</a></li>
+              <li><a href="/contact">Get Free Quote</a></li>
+            </ul>
+          </div>
 
-                <!-- Core Services Column -->
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="/services">Search Engine Optimization</a></li>
-                        <li><a href="/services">Pay Per Click (PPC)</a></li>
-                        <li><a href="/services">Reputation Management</a></li>
-                        <li><a href="/services">Conversion Rate Optimization</a></li>
-                        <li><a href="/services">Social Media Analytics</a></li>
-                    </ul>
-                </div>
+          <!-- Core Services Column -->
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="/services">Search Engine Optimization</a></li>
+              <li><a href="/services">Pay Per Click (PPC)</a></li>
+              <li><a href="/services">Reputation Management</a></li>
+              <li><a href="/services">Conversion Rate Optimization</a></li>
+              <li><a href="/services">Social Media Analytics</a></li>
+            </ul>
+          </div>
 
-                <!-- Strategic Value Column -->
-                <div class="footer-col">
-                    <h4>Why Express.Digital</h4>
-                    <ul>
-                        <li>✓ Verified Expert Network</li>
-                        <li>✓ $250 Free Audit Analysis</li>
-                        <li>✓ Transparent ROI & Costs</li>
-                        <li>✓ Guaranteed Execution Plans</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Footer Bottom Bar -->
-            <div class="footer-bottom">
-                <p>© 2026 Express.Digital Platform. All rights reserved.</p>
-                <p>Transparent & Assured Digital Growth.</p>
-            </div>
+          <!-- Strategic Value Column -->
+          <div class="footer-col">
+            <h4>Why Express.Digital</h4>
+            <ul>
+              <li>✓ Verified Expert Network</li>
+              <li>✓ $250 Free Audit Analysis</li>
+              <li>✓ Transparent ROI & Costs</li>
+              <li>✓ Guaranteed Execution Plans</li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+          <p>© 2026 Express.Digital Platform. All rights reserved.</p>
+          <p>Transparent & Assured Digital Growth.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Interactive Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
+    <!-- Other content above... -->
+
+    <!-- Mobile Navigation Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileToggle = document.getElementById("mobile-toggle");
+        const navMenu = document.getElementById("nav-menu");
+
+        if (mobileToggle && navMenu) {
+          mobileToggle.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
