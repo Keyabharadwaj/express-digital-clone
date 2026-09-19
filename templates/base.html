@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Express.Digital | Fully Managed Digital Marketing Platform{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Express<span>.Digital</span></a>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About Us</a>
+                <a href="/services">Services</a>
+                <a href="/work">Case Studies</a>
+                <a href="/contact">Contact</a>
+            </nav>
+            <a href="/contact" class="nav-button">Request Free Quote</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Global Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <!-- Brand Info Column -->
+                <div class="footer-col brand-col">
+                    <a href="/" class="footer-logo">Express<span>.Digital</span></a>
+                    <p class="footer-desc">
+                        A fully managed digital marketing platform powered by expert-vetted digital strategists. Transparent, performance-driven growth without traditional agency retainers.
+                    </p>
+                    <p class="footer-contact"><strong>Direct Contact:</strong> care@express.digital</p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Platform</a></li>
+                        <li><a href="/work">Case Studies</a></li>
+                        <li><a href="/services">Our Process</a></li>
+                        <li><a href="/contact">Get Free Quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Core Services Column -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/services">Search Engine Optimization</a></li>
+                        <li><a href="/services">Pay Per Click (PPC)</a></li>
+                        <li><a href="/services">Reputation Management</a></li>
+                        <li><a href="/services">Conversion Rate Optimization</a></li>
+                        <li><a href="/services">Social Media Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Strategic Value Column -->
+                <div class="footer-col">
+                    <h4>Why Express.Digital</h4>
+                    <ul>
+                        <li>✓ Verified Expert Network</li>
+                        <li>✓ $250 Free Audit Analysis</li>
+                        <li>✓ Transparent ROI & Costs</li>
+                        <li>✓ Guaranteed Execution Plans</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <p>© 2026 Express.Digital Platform. All rights reserved.</p>
+                <p>Transparent & Assured Digital Growth.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

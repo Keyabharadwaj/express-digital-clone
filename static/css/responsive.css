@@ -1,0 +1,279 @@
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .nav-links,
+    .nav-button {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+        position: absolute;
+        top: 75px;
+        left: 5%;
+        right: 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 20px;
+        background: #111111;
+        border: 1px solid #333333;
+    }
+
+    .nav-links.active a {
+        width: 100%;
+        padding: 15px 5px;
+    }
+
+
+    .hero {
+        padding: 150px 6% 80px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+
+    .about-section,
+    .services-section,
+    .process-section,
+    .work-section,
+    .testimonials-section {
+        padding: 90px 6%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .services-header,
+    .work-header {
+        flex-direction: column;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 130px 6% 80px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .inner-hero {
+        padding: 150px 6% 90px;
+    }
+
+    .about-page-section,
+    .values-section,
+    .services-page-section,
+    .work-page-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .about-page-content {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-page-section {
+        grid-template-columns: 1fr;
+    }
+
+    .work-page-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100vh;
+        padding: 130px 5% 70px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        text-align: center;
+    }
+
+
+    .about-section,
+    .services-section,
+    .process-section,
+    .work-section,
+    .testimonials-section {
+        padding: 75px 5%;
+    }
+
+    .about-heading h2,
+    .services-header h2,
+    .work-header h2,
+    .testimonials-heading h2 {
+        font-size: 40px;
+    }
+
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+        padding: 35px;
+    }
+
+
+    .process-item {
+        grid-template-columns: 50px 1fr 30px;
+        padding: 25px 0;
+    }
+
+    .process-item h3 {
+        font-size: 22px;
+    }
+
+
+    .project-image-one,
+    .project-image-two,
+    .project-image-three,
+    .project-image-four,
+    .work-page-image {
+        height: 280px;
+    }
+
+
+    .testimonial-card {
+        padding: 30px;
+    }
+
+
+    .cta-section {
+        padding: 90px 5%;
+    }
+
+    .cta-content h2 {
+        font-size: 45px;
+        letter-spacing: -2px;
+    }
+
+
+    .contact-section {
+        padding: 110px 5% 70px;
+    }
+
+    .contact-header h1 {
+        font-size: 45px;
+        letter-spacing: -2px;
+    }
+
+
+    .inner-hero {
+        padding: 120px 5% 70px;
+    }
+
+    .inner-hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+
+    .about-page-section,
+    .values-section,
+    .services-page-section,
+    .work-page-section {
+        padding: 70px 5%;
+    }
+
+
+    .about-page-heading h2 {
+        font-size: 40px;
+    }
+
+    .service-page-card {
+        padding: 35px 25px;
+        min-height: auto;
+    }
+
+    .service-page-card h2 {
+        font-size: 27px;
+    }
+
+    .page-cta {
+        padding: 90px 5%;
+    }
+
+    .page-cta h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 60px 5% 25px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-links {
+        gap: 60px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
